@@ -1,0 +1,44 @@
+body{
+    background: transparent;
+}
+
+.search_filtr{
+    background: #1b6d85;
+    box-sizing: border-box;
+    padding: 15px;
+}
+input{
+    width: 100%;
+
+}
+label{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+.option span{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.option span:before{
+    position: absolute;
+    content: "";
+    border: 2px solid #fb2539;
+    border-right: transparent;
+    border-bottom: transparent;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    width: 8px;
+    height: 8px;
+    right: -20px;
+    top: 3px;
+}
+
+.option span.active{
+    transform: rotate(45deg);
+}
